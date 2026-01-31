@@ -237,8 +237,6 @@ async getAdminByManagerId(@Param('managerid', ParseIntPipe) managerid: number){
 return admin;
 }
 
-
-
   @UseGuards(AuthGuard)
 @Delete('deletemanager/:managerid')
 async deleteManagerById(@Param('managerid',ParseIntPipe) managerid:number){
@@ -248,16 +246,7 @@ async deleteManagerById(@Param('managerid',ParseIntPipe) managerid:number){
   return {message: result};
 }
 
-
-
 }
-
-
-
-
-
-
-
 /*
 @Post('addadmin')
 @UsePipes(new ValidationPipe())
