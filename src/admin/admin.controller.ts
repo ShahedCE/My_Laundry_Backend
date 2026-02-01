@@ -62,7 +62,7 @@ async createAdmin(
     
   const admin = await this.adminService.createAdmin(adminData); // Save admin to DB
   // Sending welcome email
-  await this.adminService.sendWelcomeEmail(admin.email, admin.fullname);
+ //await this.adminService.sendWelcomeEmail(admin.email, admin.fullname);// Error Came From Depoly Log
   // Return the saved admin
   return admin;
 }
