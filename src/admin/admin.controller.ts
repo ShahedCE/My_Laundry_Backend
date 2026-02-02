@@ -190,7 +190,7 @@ async updateAdmin(
    const manager= await this.adminService.CreateManager(adminid,managerData);
   
   // Send welcome email
-  await this.adminService.sendWelcomeEmail(manager.email, manager.fullname);
+  //await this.adminService.sendWelcomeEmail(manager.email, manager.fullname);
   // Return the saved admin
   return manager;
    
